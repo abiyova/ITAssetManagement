@@ -14,10 +14,12 @@ body {
 
 .sidebar {
     width: var(--sidebar-width);
-    min-height: 100vh;
+    height: 100vh;
     background: #ffffff;
     transition: all 0.3s ease;
-    overflow-y: auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
     position: fixed;
     top: 0;
     left: 0;
@@ -81,6 +83,8 @@ body {
 
 .sidebar-menu {
     padding-top: 10px;
+    overflow-y: auto;
+    flex: 1;
 }
 
 .sidebar-divider {
